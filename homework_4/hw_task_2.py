@@ -6,7 +6,8 @@
 def get_dict(**kwargs) -> dict:
     temp_dict = {}
     for k, val in kwargs.items():
-        if type(val) in (list, dict, set):
+        # if isinstance(val, list | dict | set):    # var_1
+        if type(val) in (list, dict, set):          # var_2
             val = str(val)
         temp_dict[val] = k
 
