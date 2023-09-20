@@ -77,9 +77,6 @@ def is_safety_position(chess_board):
     return False
 
 
-# def print_chess_board():
-#     global eight_queens
-#     global letters
 def print_chess_board(eight_queens):
     letters = 'ABCDEFGH'
     print(' +', '-' * 24, '+', sep='')
