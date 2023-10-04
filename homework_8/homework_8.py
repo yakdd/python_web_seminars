@@ -1,4 +1,4 @@
-# Напишите функцию, которая получает на вход директорию и рекурсивно обходит её и все вложенные директории.
+ # Напишите функцию, которая получает на вход директорию и рекурсивно обходит её и все вложенные директории.
 # Результаты обхода сохраните в файлы json, csv и pickle.
 # Для дочерних объектов указывайте родительскую директорию.
 # Для каждого объекта укажите файл это или директория.
@@ -70,4 +70,4 @@ if __name__ == '__main__':
     inspect_folder(os.path.abspath(os.path.join('..')))
     create_json(FOLDER_CONTENT, 'folder_content.json')
     create_csv(FOLDER_CONTENT, 'folder_content.csv')
-    create_pickle(FOLDER_CONTENT, 'folder_content.pickle')
+    create_pickle(FOLDER_CONTENT, 'folder_content.bin')
