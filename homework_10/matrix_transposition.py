@@ -22,9 +22,14 @@ class Matrix:
                 print(matrix[i][j], end=' ')
             print()
 
+    def __repr__(self):
+        return f'Matrix({self.x}, {self.y})'
+
 
 if __name__ == '__main__':
     i = randint(2, 5)
     j = randint(2, 5)
     new_matrix = Matrix(i, j)
+    print(new_matrix)
+    print(type(new_matrix))
     new_matrix.transposition()
