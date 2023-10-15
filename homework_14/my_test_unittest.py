@@ -15,8 +15,14 @@ class TestUsersDB(unittest.TestCase):
     def test_not_equal(self):
         self.assertFalse(self.admin_user == self.test_user2)
 
-    # def test_name_user(self):
-    #     self.assertRaises(ValueError, User.__init__, '123', 123)
+    def test_name_user(self):
+        self.assertRaises(ValueError, User, '123', 123)
+
+    def test_id_user(self):
+        self.assertRaises(ValueError, User, 'Anybody', 3.14)
+
+    def test_level_user(self):
+        self.assertRaises(ValueError, User, 'Anybody', 3, level=8)
 
 
 if __name__ == '__main__':
