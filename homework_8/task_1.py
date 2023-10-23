@@ -16,4 +16,4 @@ def txt_to_json(file, name_json):
 
 
 if __name__ == '__main__':
-    txt_to_json('file_3', 'task_1.json')
+    txt_to_json('file_3.txt', 'task_1.json')
